@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>WW2 1940 Global</title>
+  </head>
+  <body>
+    <form id="GermanyIPC">
+
+      <label>Germany IPCs</label>
+      <br>
+      <br>
+      <label>IPC income: </label>
+      <!-- Income change fields -->
+      <input type="number" id="IncomeChangeG">
+      <button type="button" id="submitG">Submit Income Change</button>
+      <br>
+      <br>
+      <!-- Unit buttons -->
+      <label>Ground units:</label>
+      <br>
+      <button type="button" id="InfantryG" value="3">Infantry</button>
+      <button type="button" id="MechanizedInfantryG" value="4">Mechanized Infantry</button>
+      <button type="button" id="ArtilleryG" value="4">Artillery</button>
+      <button type="button" id="TankG" value="6">Tank</button>
+      <button type="button" id="AAAG" value="5">AAA</button>
+      <br>
+      <br>
+      <label>Aerial units:</label>
+      <br>
+      <button type="button" id="FighterG" value="10">Fighter</button>
+      <button type="button" id="TacticalBomberG" value="11">Tactical Bomber</button>
+      <button type="button" id="StrategicBomberG" value="12">Strategic Bomber</button>
+      <br>
+      <br>
+      <label>Naval units:</label>
+      <br>
+      <button type="button" id="BattleshipG" value="20">Battleship</button>
+      <button type="button" id="AircraftCarrierG" value="16">Aircraft Carrier</button>
+      <button type="button" id="CruiserG" value="12">Cruiser</button>
+      <button type="button" id="DestroyerG" value="8">Destroyer</button>
+      <button type="button" id="SubmarineG" value="6">Submarine</button>
+      <button type="button" id="TransportG" value="7">Transport</button>
+      <br>
+      <br>
+      <!-- Output divs -->
+      <div id="GOutput"></div>
+      <div id="incomeAdjustG"></div>
+      <div id="InfantryGCounter"></div>
+      <div id="MechanizedInfantryGCounter"></div>
+      <div id="ArtilleryGCounter"></div>
+      <div id="TankGCounter"></div>
+      <div id="AAAGCounter"></div>
+      <div id="FighterGCounter"></div>
+      <div id="TacticalBomberGCounter"></div>
+      <div id="StrategicBomberGCounter"></div>
+      <div id="BattleshipGCounter"></div>
+      <div id="AircraftCarrierGCounter"></div>
+      <div id="CruiserGCounter"></div>
+      <div id="DestroyerGCounter"></div>
+      <div id="SubmarineGCounter"></div>
+      <div id="TransportGCounter"></div>
+      <!-- Reset and End Turn buttons -->
+      <button type="button" id="resetTurnG">Reset Turn</button>
+      <button type="button" id="endTurnG">End Turn</button>
+      <br>
+      <br>
+      <!-- National objectives -->
+      <input type="checkbox" name="G1" value="5" > 5 IPCs when the Axis control all of the following: Poland, Norway, Denmark, Holland/Belgium, and the three home French territories.
+      <br>
+      <input type="checkbox" name="G2" value="5" > 5 IPCs when the Axis control either Leningrad or Stalingrad.
+      <br>
+      <input type="checkbox" name="G3" value="5" > 5 IPCs when there is at least one German land unit in Egypt.
+      <br>
+      <input type="checkbox" name="G4" value="5" > 5 IPCs when Germany controls both Denmark and Norway and Sweden is neutral or controlled by the Axis.
+
+      <br>
+    </form>
+
+    <script src="js/WW21940Global/ipc.js" ></script>
+
+  </body>
+</html>
